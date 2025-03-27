@@ -27,7 +27,11 @@ export default function RootLayout() {
     return null;
   }
 
-  return (
+/* Este trecho de código está retornando uma estrutura JSX que inclui um componente `ThemeProvider` de
+`@react-navigation/native`, um componente `Stack` do `expo-router` e um componente `StatusBar`
+de `expo-status-bar`. */
+
+return (
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
       <Stack>
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
